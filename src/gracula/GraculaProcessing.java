@@ -47,7 +47,7 @@ public class GraculaProcessing extends PApplet {
 		
 		for (int y = 0; y < 3; y++) {
 			for (int x = 0; x < 3; x++) {
-					surface.setPoint(controlPoints[y][x], x, y);
+				surface.setPoint(controlPoints[y][x], x, y);
 			}
 		}
 		
