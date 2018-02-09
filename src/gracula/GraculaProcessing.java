@@ -4,22 +4,22 @@ import processing.event.MouseEvent;
 
 public class GraculaProcessing extends PApplet {
 	
+	private int grabbedX = -1;
+	private int grabbedY = -1;
+	private boolean showControls = true;
+	
+	private int cameraZ;
+	private int phiAngle = 0;
+	private int thetaAngle = 0;
+	private float angle = 0;
+	
+	PVector[][] controlPoints;
+	BezierSurface surface;
+	
 	public void settings() {
 		size(1280, 720, P3D);
 		smooth(8);
 	}
-	
-	int grabbedX = -1;
-	int grabbedY = -1;
-	boolean showControls = true;
-	
-	int cameraZ;
-	int phiAngle = 0;
-	int thetaAngle = 0;
-	float angle = 0;
-	
-	PVector[][] controlPoints;
-	BezierSurface surface;
 	
 	public void setup() {
 		ellipseMode(CENTER);
