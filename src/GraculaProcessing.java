@@ -5,6 +5,7 @@ public class GraculaProcessing extends PApplet {
 	
 	public void settings() {
 		size(1280, 720, P3D);
+		smooth(8);
 	}
 	
 	int grabbedX = -1;
@@ -22,7 +23,6 @@ public class GraculaProcessing extends PApplet {
 	public void setup() {
 		ellipseMode(CENTER);
 		frameRate(100);
-		smooth(8);
 		cameraZ = height;
 
 		surface = new BezierSurface(3, 3);
