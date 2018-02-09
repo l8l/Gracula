@@ -1,5 +1,7 @@
 package gracula;
-import processing.core.*;
+
+import processing.core.PApplet;
+import processing.core.PVector;
 import processing.event.MouseEvent;
 
 public class GraculaProcessing extends PApplet {
