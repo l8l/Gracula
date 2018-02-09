@@ -4,8 +4,6 @@ import processing.event.MouseEvent;
 
 public class GraculaProcessing extends PApplet {
 	
-	private int grabbedX = -1;
-	private int grabbedY = -1;
 	private boolean showControls = true;
 	
 	private int cameraZ;
@@ -100,8 +98,7 @@ public class GraculaProcessing extends PApplet {
 	}
 	
 	public void mouseReleased() {
-		grabbedX = -1;
-		grabbedY = -1;
+		//
 	}
 	
 	public void mouseWheel(MouseEvent e) {
