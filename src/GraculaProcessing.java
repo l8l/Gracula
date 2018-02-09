@@ -2,10 +2,6 @@ import processing.core.*;
 import processing.event.MouseEvent;
 
 public class GraculaProcessing extends PApplet {
-
-	public static void main(String[] args) {
-		PApplet.main("GraculaProcessing");
-	}
 	
 	public void settings() {
 		size(1280, 720, P3D);
