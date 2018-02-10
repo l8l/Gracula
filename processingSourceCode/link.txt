@@ -1,0 +1,8 @@
+If one wants to find the source code of some processing function, one can do it as described here:
+https://forum.processing.org/two/discussion/12520/how-to-find-a-particular-function-source-code-in-processing-s-github-repository
+
+In short, first go to the source code of PApplet:
+https://github.com/processing/processing/blob/master/core/src/processing/core/PApplet.java
+Most graphics codes are listed in
+https://github.com/processing/processing/blob/master/core/src/processing/core/PGraphics.java
+

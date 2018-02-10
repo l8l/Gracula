@@ -1,0 +1,27 @@
+" remap copy to clipboard with str+C of visual text
+vnoremap <C-c> "*y
+set clipboard=unnamed
+set clipboard=unnamedplus
+
+" make syntax highlighting permanent
+syntax on
+
+set ruler         " show the cursor position all the time
+set showcmd       " display incomplete commands
+set incsearch     " do incremental searching
+set hlsearch      " highlight matches
+
+" deactivate highlighting by F3
+nnoremap ä :set nohlsearch<ENTER>
+
+" Quicker movement inside a vim file, go 5 steps instead of 1:
+nnoremap <Left> 10h
+nnoremap <Right> 10l
+nnoremap <Up> 10k
+nnoremap <Down> 10j
+
+nnoremap H 7h
+nnoremap L 7l
+nnoremap K 7k
+nnoremap J 7j
+

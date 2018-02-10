@@ -5,7 +5,7 @@ import processing.core.PVector;
 import processing.event.MouseEvent;
 
 public class GraculaProcessing extends PApplet {
-	
+
 	private boolean showControls = true;
 	
 	private int cameraZ;

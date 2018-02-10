@@ -1,0 +1,252 @@
+body {
+	background-image: url('processing-forum-two.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+	background-color: #0c2033;
+}
+
+code, pre {
+	background-color: #f7f7f7;
+	border: 1px solid #e3e3e3;
+}
+
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #1e79a7;
+}
+
+/* --------------------------------------------- */
+
+#Frame #Head {
+	background-color: transparent;
+	padding: 40px 0px 0px 0px;
+}
+
+#Head .LogoImg {
+	padding-left: 10px;
+	margin-bottom: 40px;
+}
+
+#Head .SiteTitle {
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#Body .BreadcrumbsWrapper {
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+#Head .SiteSearch .InputBox {
+	/*width: 270px;*/
+}
+
+/* --------------------------------------------- */
+
+#Body #Panel {
+	/*float: right;*/
+	width: 270px;
+}
+
+#Body #Panel .Box,
+#Body #Panel .BoxFilter {
+	background-color: white;
+	overflow: auto;
+}
+
+#Body #Panel .MeBox {
+	background-color: white;
+	padding: 10px;
+	padding-bottom: 5px;
+	margin-top: 0px;
+}
+
+#Body #Panel .CategoryFilter {
+	background-color: white;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#Body #Panel .Photo {
+	background-color: white;
+	padding: 10px;
+}
+
+#Body #Panel .Photo .ChangePicture {
+}
+
+#Body #Panel .GuestBox {
+	padding: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-top: 0px;
+}
+
+#Body #Panel .BoxCategories h4 {
+	padding-left: 4px;
+}
+
+#Body #Panel .Tags {
+	padding: 10px;
+	padding-top: 3px;
+}
+
+/* --------------------------------------------- */
+
+#Body .ContentColumn {
+	/*margin: 0 280px 0 0;*/
+	margin: 0 0 0 280px;
+	background-color: white;
+}
+
+#Body .ChildCategoryList {
+	display: none;
+}
+
+#Body .ChildCategoryList .Item {
+	width: 100%;
+	float: none;
+	padding: 10px;
+}
+
+#Body .ChildCategoryList .Item .ItemContent {
+	padding-top: 0px;
+}
+
+#Body .ContentColumn .SearchForm {
+	display: none;
+}
+
+#Body .ContentColumn .PageControls {
+	padding-top: 5px;
+	padding-right: 10px;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+#Body .HomepageTitle,
+#Body .PageDescription {
+	font-size: 0px;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#Body .Pager {
+	
+}
+
+#Body .Row {
+background-color:#eee;
+}
+
+#Content .Item-BodyWrap a {
+	text-decoration: underline;
+}
+
+#Content .Discussion .PageTitle {
+	padding: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+#Content .Discussion .PageTitle h1 {
+	font-size: 150%;
+}
+
+#Content .BeforeCommentHeading {
+	padding-right: 7px;
+}
+
+#Content .CommentHeading {
+	padding-left: 7px;
+}
+
+#Content .syntaxhighlighter {
+	border: 1px solid #e3e3e3;
+	width: 660px !important;
+}
+
+#Content .syntaxhighlighter .code {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+#Content .MessageList .Item {
+	border-bottom: 1px solid #c7c7c7;
+	padding-bottom: 4px;
+}
+
+#Content .MessageList .Item .Item-BodyWrap .Reactions {
+	margin: 0px;
+}
+
+#Content .CommentForm h2 {
+	padding-left: 10px;
+}
+
+#Content #DiscussionForm h1 {
+	margin: 0px;
+	padding: 15px 20px 15px 20px;
+	background: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid #c7c7c7;
+}
+
+#Content .ActivityFormWrap h1 {
+	margin: 0px;
+	padding: 10px;
+	padding-bottom: 0px;
+	background: rgba(0, 0, 0, 0.03);
+}
+
+#Content .ActivityFormWrap {
+	border-bottom: 1px solid #c7c7c7;
+}
+
+#Content .Activities .Empty {
+	padding: 10px;
+	margin: 0px;
+}
+
+#Content .PagerWrap {
+	padding: 5px;
+}
+
+#Content .Profile .User {
+	border-bottom: 1px solid #c7c7c7;
+}
+
+#Content .Profile .User,
+#Content .Profile h2 {
+	padding: 10px;
+}
+
+#Content .Profile .FormWrapper {
+	padding-top: 12px;
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+/* --------------------------------------------- */
+
+#Foot {
+	line-height: 1.5em;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	font-size: 80%;
+	color: #496895;
+}
+
+#Foot a,
+#Foot a:hover,
+#Foot a:link,
+#Foot a:visited {
+	color: #496895;
+}

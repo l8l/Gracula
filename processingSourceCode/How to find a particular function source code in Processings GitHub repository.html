@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="utf-8"><script type="text/javascript" src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/7764a8b478"></script><script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/nr-1071.js"></script><script async="" src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+   <meta name="Author" content="Casey Reas &amp; Ben Fry">
+   <meta name="Publisher" content="Processing">
+   <meta name="Keywords" content="Processing, Processing, Interactive Media, Electronic Arts, Programming, Java, Ben Fry, Casey Reas">
+   <meta name="Description" content="Processing is an electronic sketchbook for developing 
+         ideas. It is a context for learning fundamentals of computer programming 
+         within the context of the electronic arts.">
+   <meta name="Copyright" content="All contents copyright Ben Fry, Casey Reas, MIT Media Laboratory">
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="@processingorg">
+   <meta property="og:description" content="Processing is an electronic sketchbook, a language and a worldwide community. This is its forum.">
+   <meta property="og:image" content="http://forum.processing.org/processing-org.jpg">
+   <meta property="og:site_name" content="Processing 2.0 Forum">
+   <meta property="og:title" content="Processing 2.x and 3.x Forum">
+   <meta property="og:type" content="forum">
+   <meta property="og:url" content="">
+  <title>How to find a particular function source code in Processing's GitHub repository - Processing 2.x and 3.x Forum</title>
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/tag.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/emotify.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/buttonbar.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/custom.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/shCoreDefault.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/css.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/shCoreExtProcessing.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/shThemeProcessing20.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/imageupload.css" media="all">
+<link rel="stylesheet" type="text/css" href="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/flagging.css" media="all">
+<link rel="canonical" href="https://forum.processing.org/two/discussion/12520/how-to-find-a-particular-function-source-code-in-processing-s-github-repository">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Processing 2.x and 3.x Forum">
+<meta property="og:title" itemprop="name" content="How to find a particular function source code in Processing's GitHub repository">
+<meta property="og:url" content="https://forum.processing.org/two/discussion/12520/how-to-find-a-particular-function-source-code-in-processing-s-github-repository">
+<meta name="description" property="og:description" itemprop="description" content="I'm trying to find out how does the sphere() function work. I've searched the repository, but I wasn't able to find any functions source code at all.">
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_007.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery-ui-1.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_002.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_003.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_006.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/global.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_004.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/discussion.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/autosave.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/emotify.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/shCore.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/shAutoloader.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/buttonbar.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/jquery_005.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/plupload.js" type="text/javascript"></script>
+<script src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/imageupload.js" type="text/javascript"></script>		<script type="text/javascript">
+			var pluginBasePath = "/two/plugins/G_SyntaxHighlighter/.";
+			console.log( pluginBasePath );
+			var triggerSyntaxHighlight = function triggerSyntaxHighlight () {
+				// remove <code> from markdown <pre><code>...</code></pre>
+				$('pre code').each(function(){
+					var pre = $(this).parent();
+					pre.attr('lang',$(this).attr('lang') || 'processing');
+					pre.html($(this).html());
+				});
+				// set language / brush
+				jQuery("pre").each(function(){
+					if ( $(this).data('sh-processed') ) return;
+					var codeText=jQuery(this).html();
+					codeText = codeText.replace(/<br>/g, "\n");
+					jQuery(this).html(codeText);
+					var lang = jQuery(this).attr("lang") || 'processing';
+					jQuery(this).addClass("brush:"+lang);
+					$(this).data('sh-processed',true);
+				});
+				// load brush files
+				SyntaxHighlighter.autoloader.apply(null, path(
+				  "applescript            @shBrushAppleScript.js",
+				  "actionscript3 as3      @shBrushAS3.js",
+				  "bash shell             @shBrushBash.js",
+				  "coffeescript coffee    @shBrushCoffeeScript.js",
+				  "coldfusion cf          @shBrushColdFusion.js",
+				  "cpp c                  @shBrushCpp.js",
+				  "c# c-sharp csharp      @shBrushCSharp.js",
+				  "css                    @shBrushCss.js",
+				  "delphi pascal          @shBrushDelphi.js",
+				  "diff patch pas         @shBrushDiff.js",
+				  "erl erlang             @shBrushErlang.js",
+				  "groovy                 @shBrushGroovy.js",
+				  "java                   @shBrushJava.js",
+				  "jfx javafx             @shBrushJavaFX.js",
+				  "js jscript javascript  @shBrushJScript.js",
+				  "perl pl                @shBrushPerl.js",
+				  "php                    @shBrushPhp.js",
+				  "text plain             @shBrushPlain.js",
+				  "py python              @shBrushPython.js",
+				  "ruby rails ror rb      @shBrushRuby.js",
+				  "sass scss              @shBrushSass.js",
+				  "scala                  @shBrushScala.js",
+				  "sql                    @shBrushSql.js",
+				  "vb vbnet               @shBrushVb.js",
+				  "xml xhtml xslt html    @shBrushXml.js",
+				  "pde processing p5      @shBrushProcessing20.js"
+				));
+				SyntaxHighlighter.defaults["toolbar"]=false;
+				//SyntaxHighlighter.defaults["gutter"]=false;
+				SyntaxHighlighter.all();
+			}
+
+			jQuery(document).ready(function(){
+				triggerSyntaxHighlight();
+			});
+
+			var path = function path () {
+			  var args = arguments,
+			      result = []
+			      ;
+
+			  for (var i = 0; i < args.length; i++) result.push(args[i].replace("@", pluginBasePath + "/scripts/"));
+
+			  return result;
+			};
+		</script>
+
+</head>
+<body id="vanilla_discussion_index" class="Vanilla Discussion Index  Question Section-Discussion Section-Category-using-processing">
+   <div id="Frame">
+      <div class="Head" id="Head">
+         <div class="Row">
+            <div class="LogoImg"><a href="https://forum.processing.org/two/"><img src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/processing_forum_logo.png" alt="Processing 2.0/3.0 Forum" title="Processing 2.0/3.0 Forum"></a></div>
+            <strong class="SiteTitle"><a href="https://forum.processing.org/two/">Processing 2.x and 3.x Forum</a></strong>
+            <div class="SiteSearch"><form method="get" action="/two/search">
+<div>
+<input id="Form_Search" name="Search" placeholder="Search" class="InputBox" type="text"><input id="Form_Go" value="Go" class="Button" type="submit">
+</div>
+</form></div>
+            <ul class="SiteMenu">
+               
+               <li><a href="https://forum.processing.org/two/discussions" class="">Discussions</a></li>
+               
+               
+               
+               
+               <li><a href="https://forum.processing.org/two/entry/signin" rel="nofollow" class="SignInPopup">Sign In</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="Body">
+         <div class="Row">
+            <div class="BreadcrumbsWrapper"><span class="Breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><span class="CrumbLabel HomeCrumb"><a href="https://forum.processing.org/two/" itemprop="url"><span itemprop="title">Home</span></a></span> <span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><span class="Crumb">›</span> <span class="Category-using-processing"><a href="https://forum.processing.org/two/categories/using-processing" itemprop="url"><span itemprop="title">Using Processing</span></a></span> </span></span></div>
+            <div class="Column PanelColumn" id="Panel">
+               <div class="MeBox MeBox-SignIn"><div class="SignInLinks"><a href="https://forum.processing.org/two/entry/signin?Target=discussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository" class=" SignInPopup" rel="nofollow">Sign In</a> <span class="Bullet">•</span> <a href="https://forum.processing.org/two/entry/register?Target=discussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository" class="ApplyButton" rel="nofollow">Register</a> </div> <div class="SignInIcons"></div></div>
+               <div class="Box GuestBox">
+   <h4>Howdy, Stranger!</h4>
+   <p>It looks like you're new here. If you want to get involved, click one of these buttons!</p>
+      
+   <div class="P"><a href="https://forum.processing.org/two/entry/signin?Target=discussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository" class="Button Primary SignInPopup" rel="nofollow">Sign In</a> <a href="https://forum.processing.org/two/entry/register?Target=discussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository" class="Button ApplyButton" rel="nofollow">Register</a></div>   </div><div class="BoxFilter BoxDiscussionFilter">
+   <ul class="FilterMenu">
+      <li class="AllCategories"><a href="https://forum.processing.org/two/categories"><span class="Sprite SpAllCategories"></span> Categories</a></li>       <li class="Discussions"><a href="https://forum.processing.org/two/discussions" class=""><span class="Sprite SpDiscussions"></span> Recent Discussions</a></li>
+            <li class="QnA-UnansweredQuestions "><a href="https://forum.processing.org/two/discussions/unanswered" class="UnansweredQuestions"><span class="Sprite SpUnansweredQuestions"></span> Unanswered <span class="Aside"><span class="Popin Count" rel="/discussions/unansweredcount">2912</span></span></a></li>   </ul>
+</div><div class="Box BoxCategories">
+   <h4>Categories</h4>
+   <ul class="PanelInfo PanelCategories">
+   <li><a href="https://forum.processing.org/two/categories" class="ItemLink">All Categories <span class="Aside"><span class="Count"><span title="24,404 discussions" class="Number">24.4K</span></span></span></a></li><li class="ClearFix Depth1 Category-announcements-guidelines"><a href="https://forum.processing.org/two/categories/announcements-guidelines" class="ItemLink">Announcements &amp; Guidelines <span class="Aside"><span class="Count"><span title="10 discussions" class="Number">10</span></span></span></a></li>
+<li class="ClearFix Depth1 Category-common-questions"><a href="https://forum.processing.org/two/categories/common-questions" class="ItemLink">Common Questions <span class="Aside"><span class="Count"><span title="30 discussions" class="Number">30</span></span></span></a></li>
+<li class="ClearFix Depth1 Active Category-using-processing"><a href="https://forum.processing.org/two/categories/using-processing" class="ItemLink">Using Processing <span class="Aside"><span class="Count"><span title="21,094 discussions" class="Number">21.1K</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-programming-questions"><a href="https://forum.processing.org/two/categories/programming-questions" class="ItemLink">Programming Questions <span class="Aside"><span class="Count"><span title="11,654 discussions" class="Number">11.7K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-questions-about-code"><a href="https://forum.processing.org/two/categories/questions-about-code" class="ItemLink">Questions about Code <span class="Aside"><span class="Count"><span title="6,020 discussions" class="Number">6K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-how-to"><a href="https://forum.processing.org/two/categories/how-to" class="ItemLink">How To... <span class="Aside"><span class="Count"><span title="4,046 discussions" class="Number">4K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-hello-processing"><a href="https://forum.processing.org/two/categories/hello-processing" class="ItemLink">Hello Processing <span class="Aside"><span class="Count"><span title="70 discussions" class="Number">70</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-glsl-shaders"><a href="https://forum.processing.org/two/categories/glsl-shaders" class="ItemLink">GLSL / Shaders <span class="Aside"><span class="Count"><span title="272 discussions" class="Number">272</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-questions-about-libraries"><a href="https://forum.processing.org/two/categories/questions-about-libraries" class="ItemLink">Library Questions <span class="Aside"><span class="Count"><span title="3,810 discussions" class="Number">3.8K</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-hardware-other-languages"><a href="https://forum.processing.org/two/categories/hardware-other-languages" class="ItemLink">Hardware, Integration &amp; Other Languages <span class="Aside"><span class="Count"><span title="2,541 discussions" class="Number">2.5K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-kinect"><a href="https://forum.processing.org/two/categories/kinect" class="ItemLink">Kinect <span class="Aside"><span class="Count"><span title="636 discussions" class="Number">636</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-arduino"><a href="https://forum.processing.org/two/categories/arduino" class="ItemLink">Arduino <span class="Aside"><span class="Count"><span title="981 discussions" class="Number">981</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-raspberry-pi"><a href="https://forum.processing.org/two/categories/raspberry-pi" class="ItemLink">Raspberry PI <span class="Aside"><span class="Count"><span title="173 discussions" class="Number">173</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-questions-about-modes"><a href="https://forum.processing.org/two/categories/questions-about-modes" class="ItemLink">Questions about Modes <span class="Aside"><span class="Count"><span title="1,837 discussions" class="Number">1.8K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-android"><a href="https://forum.processing.org/two/categories/android" class="ItemLink">Android Mode <span class="Aside"><span class="Count"><span title="1,201 discussions" class="Number">1.2K</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-javascript"><a href="https://forum.processing.org/two/categories/javascript" class="ItemLink">JavaScript Mode <span class="Aside"><span class="Count"><span title="400 discussions" class="Number">400</span></span></span></a></li>
+<li class="ClearFix Depth3 Category-python"><a href="https://forum.processing.org/two/categories/python" class="ItemLink">Python Mode <span class="Aside"><span class="Count"><span title="176 discussions" class="Number">176</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-questions-about-tools"><a href="https://forum.processing.org/two/categories/questions-about-tools" class="ItemLink">Questions about Tools <span class="Aside"><span class="Count"><span title="99 discussions" class="Number">99</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-espanol"><a href="https://forum.processing.org/two/categories/espanol" class="ItemLink">Espanol <span class="Aside"><span class="Count"><span title="1 discussion" class="Number">1</span></span></span></a></li>
+<li class="ClearFix Depth1 Category-developing-processing"><a href="https://forum.processing.org/two/categories/developing-processing" class="ItemLink">Developing Processing <span class="Aside"><span class="Count"><span title="441 discussions" class="Number">441</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-create-announce-libraries"><a href="https://forum.processing.org/two/categories/create-announce-libraries" class="ItemLink">Create &amp; Announce Libraries <span class="Aside"><span class="Count"><span title="205 discussions" class="Number">205</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-create-announce-modes"><a href="https://forum.processing.org/two/categories/create-announce-modes" class="ItemLink">Create &amp; Announce Modes <span class="Aside"><span class="Count"><span title="17 discussions" class="Number">17</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-create-announce-tools"><a href="https://forum.processing.org/two/categories/create-announce-tools" class="ItemLink">Create &amp; Announce Tools <span class="Aside"><span class="Count"><span title="28 discussions" class="Number">28</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-summer-of-code-2018"><a href="https://forum.processing.org/two/categories/summer-of-code-2018" class="ItemLink">Summer of Code 2018 <span class="Aside"><span class="Count"><span title="0 discussions" class="Number">0</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-rails-girls-summer-of-code-2017"><a href="https://forum.processing.org/two/categories/rails-girls-summer-of-code-2017" class="ItemLink">Rails Girls Summer of Code 2017 <span class="Aside"><span class="Count"><span title="3 discussions" class="Number">3</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-summer-of-code-2017"><a href="https://forum.processing.org/two/categories/summer-of-code-2017" class="ItemLink">Summer of Code 2017 <span class="Aside"><span class="Count"><span title="49 discussions" class="Number">49</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-summer-of-code-2016"><a href="https://forum.processing.org/two/categories/summer-of-code-2016" class="ItemLink">Summer of Code 2016 <span class="Aside"><span class="Count"><span title="4 discussions" class="Number">4</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-summer-of-code-2015"><a href="https://forum.processing.org/two/categories/summer-of-code-2015" class="ItemLink">Summer of Code 2015 <span class="Aside"><span class="Count"><span title="40 discussions" class="Number">40</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-summer-of-code-2014"><a href="https://forum.processing.org/two/categories/summer-of-code-2014" class="ItemLink">Summer of Code 2014 <span class="Aside"><span class="Count"><span title="22 discussions" class="Number">22</span></span></span></a></li>
+<li class="ClearFix Depth1 Category-p5-js"><a href="https://forum.processing.org/two/categories/p5-js" class="ItemLink">p5.js <span class="Aside"><span class="Count"><span title="1,438 discussions" class="Number">1.4K</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-p5-js-programming-questions"><a href="https://forum.processing.org/two/categories/p5-js-programming-questions" class="ItemLink">p5.js Programming Questions <span class="Aside"><span class="Count"><span title="872 discussions" class="Number">872</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-p5-js-library-questions"><a href="https://forum.processing.org/two/categories/p5-js-library-questions" class="ItemLink">p5.js Library Questions <span class="Aside"><span class="Count"><span title="292 discussions" class="Number">292</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-p5-js-development-questions"><a href="https://forum.processing.org/two/categories/p5-js-development-questions" class="ItemLink">p5.js Development Questions <span class="Aside"><span class="Count"><span title="29 discussions" class="Number">29</span></span></span></a></li>
+<li class="ClearFix Depth1 Category-general"><a href="https://forum.processing.org/two/categories/general" class="ItemLink">General <span class="Aside"><span class="Count"><span title="1,391 discussions" class="Number">1.4K</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-share-your-work"><a href="https://forum.processing.org/two/categories/share-your-work" class="ItemLink">Share Your Work <span class="Aside"><span class="Count"><span title="645 discussions" class="Number">645</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-events-opportunities"><a href="https://forum.processing.org/two/categories/events-opportunities" class="ItemLink">Events &amp; Opportunities <span class="Aside"><span class="Count"><span title="271 discussions" class="Number">271</span></span></span></a></li>
+<li class="ClearFix Depth2 Category-general-discussion"><a href="https://forum.processing.org/two/categories/general-discussion" class="ItemLink">General Discussion <span class="Aside"><span class="Count"><span title="363 discussions" class="Number">363</span></span></span></a></li>
+   </ul>
+</div>
+         <div class="Box">
+         <h4>In this Discussion</h4>
+         <ul class="PanelInfo">
+                     <li>
+               <strong><a href="https://forum.processing.org/two/profile/4861/KevinWorkman" class="UserLink">KevinWorkman</a></strong>
+               September 2015            </li>
+                     </ul>
+      </div>
+      
+            </div>
+            <div class="Column ContentColumn" id="Content"><div class="MessageList Discussion"><!-- Page Title -->
+<div id="Item_0" class="PageTitle"><div class="Options"></div><h1>How to find a particular function source code in Processing's GitHub repository</h1></div>
+
+<div id="Discussion_12520" class="Item ItemDiscussion">
+   <div class="Discussion">
+      <div class="Item-Header DiscussionHeader">
+         <div class="AuthorWrap">
+            <span class="Author">
+               <a title="Khazon" href="https://forum.processing.org/two/profile/17029/Khazon" class="PhotoWrap"><img src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/nZ37B6872MYVO.png" alt="Khazon" class="ProfilePhoto ProfilePhotoMedium"></a><a href="https://forum.processing.org/two/profile/17029/Khazon" class="Username">Khazon</a>            </span>
+            <span class="AuthorInfo">
+                           </span>
+         </div>
+         <div class="Meta DiscussionMeta">
+            <span class="MItem DateCreated">
+               <a href="https://forum.processing.org/two/discussion/12520/how-to-find-a-particular-function-source-code-in-processing-s-github-repository" class="Permalink" rel="nofollow"><time title="September 15, 2015 11:48AM" datetime="2015-09-15T11:48:50+00:00">September 2015</time></a>            </span>
+            <span class="MItem"> <span title="Edited by Khazon on September 15, 2015  2:07PM." class="DateUpdated">edited September 2015</span> </span>             <span class="MItem Category"> in <a href="https://forum.processing.org/two/categories/using-processing">Using Processing</a></span>          </div>
+      </div>
+            <div class="Item-BodyWrap">
+         <div class="Item-Body">
+            <div class="Message">   
+               <p>I'm trying to find out how does the sphere() function work. I've searched the <a rel="nofollow" href="https://github.com/processing/processing">repository</a>,
+ but I wasn't able to find any functions source code at all. Is there 
+any special folder where all the functions are? Thank you for your time 
+in advance.</p>
+            </div>
+                  <div class="InlineTags Meta">
+         Tagged:
+         <ul>
+                     <li><a href="https://forum.processing.org/two/discussions/tagged?Tag=sphere%28%29" class="Tag_sphere()">sphere()</a></li>
+                     <li><a href="https://forum.processing.org/two/discussions/tagged/github" class="Tag_github">github</a></li>
+                     <li><a href="https://forum.processing.org/two/discussions/tagged/source_code" class="Tag_source_code">source_code</a></li>
+                  </ul>
+      </div>
+      <div class="Reactions"></div>         </div>
+      </div>
+   </div>
+</div>
+</div><div class="DataBox DataBox-AcceptedAnswers"><span id="latest"></span>
+   <h2 class="CommentHeading">Best Answer</h2>
+   <ul class="MessageList DataList AcceptedAnswers">
+               <li class="Item Alt ItemComment">
+   		 <div class="Comment">
+   		 <a href="https://forum.processing.org/two/discussion/12520/#Comment_51062" class="Permalink" name="Item_0" rel="nofollow" title="Click to jump to this answer">Answer #51062 by <b>KevinWorkman</b> from <time title="September 15, 2015 12:23PM" datetime="2015-09-15T12:23:40+00:00">September 2015</time></a>     	 </div>
+     	 </li>
+            </ul>
+</div>
+<div class="CommentsWrap"><span class="BeforeCommentHeading"></span><div class="DataBox DataBox-Comments"><h2 class="CommentHeading">Answers</h2><ul class="MessageList DataList Comments">
+	<li class="Item ItemComment QnA-Item-Accepted" id="Comment_51062">
+   <div class="Comment">
+      
+            <div class="Options">
+               </div>
+            <div class="Item-Header CommentHeader">
+         <div class="AuthorWrap">
+            <span class="Author">
+               <a title="KevinWorkman" href="https://forum.processing.org/two/profile/4861/KevinWorkman" class="PhotoWrap"><img src="How%20to%20find%20a%20particular%20function%20source%20code%20in%20Processings%20GitHub%20repository_files/avatar.png" alt="KevinWorkman" class="ProfilePhoto ProfilePhotoMedium"></a><a href="https://forum.processing.org/two/profile/4861/KevinWorkman" class="Username">KevinWorkman</a>            </span>
+            <span class="AuthorInfo">
+                             </span>   
+         </div>
+         <div class="Meta CommentMeta CommentInfo">
+            <span class="MItem DateCreated">
+               <a href="https://forum.processing.org/two/discussion/comment/51062/#Comment_51062" class="Permalink" name="Item_1" rel="nofollow"><time title="September 15, 2015 12:23PM" datetime="2015-09-15T12:23:40+00:00">September 2015</time></a>            </span>
+                         <span class="Tag QnA-Box QnA-Accepted" title="Answer ✓"><span>Answer ✓</span></span>          </div>
+      </div>
+      <div class="Item-BodyWrap">
+         <div class="Item-Body">
+            <div class="Message">
+               <p>Your first stop should be the <code>PApplet</code> class: <a href="https://github.com/processing/processing/blob/master/core/src/processing/core/PApplet.java" target="_blank" rel="nofollow">https://github.com/processing/processing/blob/master/core/src/processing/core/PApplet.java</a></p>
+
+<p>Doing a ctrl+f on "sphere" shows this:</p>
+
+<div><div id="highlighter_521285" class="syntaxhighlighter  processing"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="processing keyword1">public</code> <code class="processing keyword1">void</code> <code class="processing function2">sphere</code><code class="processing plain">(</code><code class="processing keyword4">float</code> <code class="processing plain">r) {</code></div><div class="line number2 index1 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">if</code> <code class="processing plain">(recorder != </code><code class="processing keyword1">null</code><code class="processing plain">) recorder.</code><code class="processing function2">sphere</code><code class="processing plain">(r);</code></div><div class="line number3 index2 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">g.</code><code class="processing function2">sphere</code><code class="processing plain">(r);</code></div><div class="line number4 index3 alt1"><code class="processing plain">}</code></div></div></td></tr></tbody></table></div></div>
+
+<p>That <code>g</code> variable is of type <code>PGraphics</code>: <a href="https://github.com/processing/processing/blob/master/core/src/processing/core/PGraphics.java" target="_blank" rel="nofollow">https://github.com/processing/processing/blob/master/core/src/processing/core/PGraphics.java</a></p>
+
+<p>Doing another ctrl+f of "sphere" gives you this:</p>
+
+<div><div id="highlighter_553436" class="syntaxhighlighter  processing"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div><div class="line number41 index40 alt2">41</div><div class="line number42 index41 alt1">42</div><div class="line number43 index42 alt2">43</div><div class="line number44 index43 alt1">44</div><div class="line number45 index44 alt2">45</div><div class="line number46 index45 alt1">46</div><div class="line number47 index46 alt2">47</div><div class="line number48 index47 alt1">48</div><div class="line number49 index48 alt2">49</div><div class="line number50 index49 alt1">50</div><div class="line number51 index50 alt2">51</div><div class="line number52 index51 alt1">52</div><div class="line number53 index52 alt2">53</div><div class="line number54 index53 alt1">54</div><div class="line number55 index54 alt2">55</div><div class="line number56 index55 alt1">56</div><div class="line number57 index56 alt2">57</div><div class="line number58 index57 alt1">58</div><div class="line number59 index58 alt2">59</div><div class="line number60 index59 alt1">60</div><div class="line number61 index60 alt2">61</div><div class="line number62 index61 alt1">62</div><div class="line number63 index62 alt2">63</div><div class="line number64 index63 alt1">64</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="processing keyword1">public</code> <code class="processing keyword1">void</code> <code class="processing function2">sphere</code><code class="processing plain">(</code><code class="processing keyword4">float</code> <code class="processing plain">r) {</code></div><div class="line number2 index1 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">if</code> <code class="processing plain">((sphereDetailU &lt; </code><code class="processing value">3</code><code class="processing plain">) || (sphereDetailV &lt; </code><code class="processing value">2</code><code class="processing plain">)) {</code></div><div class="line number3 index2 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">sphereDetail</code><code class="processing plain">(</code><code class="processing value">30</code><code class="processing plain">);</code></div><div class="line number4 index3 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">}</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">edge(</code><code class="processing keyword1">false</code><code class="processing plain">);</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing comments">// 1st ring from south pole</code></div><div class="line number10 index9 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">beginShape</code><code class="processing plain">(</code><code class="processing literal2">TRIANGLE_STRIP</code><code class="processing plain">);</code></div><div class="line number11 index10 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">for</code> <code class="processing plain">(</code><code class="processing keyword4">int</code> <code class="processing plain">i = </code><code class="processing value">0</code><code class="processing plain">; i &lt; sphereDetailU; i++) {</code></div><div class="line number12 index11 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, -</code><code class="processing value">1</code><code class="processing plain">, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number13 index12 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, -r, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number14 index13 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[i], sphereY[i], sphereZ[i]);</code></div><div class="line number15 index14 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[i], r * sphereY[i], r * sphereZ[i]);</code></div><div class="line number16 index15 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">}</code></div><div class="line number17 index16 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, -r, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number18 index17 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, -r, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number19 index18 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[</code><code class="processing value">0</code><code class="processing plain">], sphereY[</code><code class="processing value">0</code><code class="processing plain">], sphereZ[</code><code class="processing value">0</code><code class="processing plain">]);</code></div><div class="line number20 index19 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[</code><code class="processing value">0</code><code class="processing plain">], r * sphereY[</code><code class="processing value">0</code><code class="processing plain">], r * sphereZ[</code><code class="processing value">0</code><code class="processing plain">]);</code></div><div class="line number21 index20 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">endShape</code><code class="processing plain">();</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword4">int</code> <code class="processing plain">v1,v11,v2;</code></div><div class="line number24 index23 alt1">&nbsp;</div><div class="line number25 index24 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing comments">// middle rings</code></div><div class="line number26 index25 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword4">int</code> <code class="processing plain">voff = </code><code class="processing value">0</code><code class="processing plain">;</code></div><div class="line number27 index26 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">for</code> <code class="processing plain">(</code><code class="processing keyword4">int</code> <code class="processing plain">i = </code><code class="processing value">2</code><code class="processing plain">; i &lt; sphereDetailV; i++) {</code></div><div class="line number28 index27 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">v1 = v11 = voff;</code></div><div class="line number29 index28 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">voff += sphereDetailU;</code></div><div class="line number30 index29 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">v2 = voff;</code></div><div class="line number31 index30 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">beginShape</code><code class="processing plain">(</code><code class="processing literal2">TRIANGLE_STRIP</code><code class="processing plain">);</code></div><div class="line number32 index31 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">for</code> <code class="processing plain">(</code><code class="processing keyword4">int</code> <code class="processing plain">j = </code><code class="processing value">0</code><code class="processing plain">; j &lt; sphereDetailU; j++) {</code></div><div class="line number33 index32 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[v1], sphereY[v1], sphereZ[v1]);</code></div><div class="line number34 index33 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[v1], r * sphereY[v1], r * sphereZ[v1++]);</code></div><div class="line number35 index34 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[v2], sphereY[v2], sphereZ[v2]);</code></div><div class="line number36 index35 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[v2], r * sphereY[v2], r * sphereZ[v2++]);</code></div><div class="line number37 index36 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">}</code></div><div class="line number38 index37 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing comments">// close each ring</code></div><div class="line number39 index38 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">v1 = v11;</code></div><div class="line number40 index39 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">v2 = voff;</code></div><div class="line number41 index40 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[v1], sphereY[v1], sphereZ[v1]);</code></div><div class="line number42 index41 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[v1], r * sphereY[v1], r * sphereZ[v1]);</code></div><div class="line number43 index42 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[v2], sphereY[v2], sphereZ[v2]);</code></div><div class="line number44 index43 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[v2], r * sphereY[v2], r * sphereZ[v2]);</code></div><div class="line number45 index44 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">endShape</code><code class="processing plain">();</code></div><div class="line number46 index45 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">}</code></div><div class="line number47 index46 alt2">&nbsp;</div><div class="line number48 index47 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing comments">// add the northern cap</code></div><div class="line number49 index48 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">beginShape</code><code class="processing plain">(</code><code class="processing literal2">TRIANGLE_STRIP</code><code class="processing plain">);</code></div><div class="line number50 index49 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing keyword2">for</code> <code class="processing plain">(</code><code class="processing keyword4">int</code> <code class="processing plain">i = </code><code class="processing value">0</code><code class="processing plain">; i &lt; sphereDetailU; i++) {</code></div><div class="line number51 index50 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">v2 = voff + i;</code></div><div class="line number52 index51 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[v2], sphereY[v2], sphereZ[v2]);</code></div><div class="line number53 index52 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[v2], r * sphereY[v2], r * sphereZ[v2]);</code></div><div class="line number54 index53 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, </code><code class="processing value">1</code><code class="processing plain">, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number55 index54 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, r, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number56 index55 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">}</code></div><div class="line number57 index56 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(sphereX[voff], sphereY[voff], sphereZ[voff]);</code></div><div class="line number58 index57 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(r * sphereX[voff], r * sphereY[voff], r * sphereZ[voff]);</code></div><div class="line number59 index58 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">normal</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, </code><code class="processing value">1</code><code class="processing plain">, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number60 index59 alt1"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">vertex</code><code class="processing plain">(</code><code class="processing value">0</code><code class="processing plain">, r, </code><code class="processing value">0</code><code class="processing plain">);</code></div><div class="line number61 index60 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing function2">endShape</code><code class="processing plain">();</code></div><div class="line number62 index61 alt1">&nbsp;</div><div class="line number63 index62 alt2"><code class="processing spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="processing plain">edge(</code><code class="processing keyword1">true</code><code class="processing plain">);</code></div><div class="line number64 index63 alt1"><code class="processing spaces">&nbsp;&nbsp;</code><code class="processing plain">}</code></div></div></td></tr></tbody></table></div></div>
+            </div>
+            <div class="Reactions"></div>         </div>
+      </div>
+   </div>
+</li>
+</ul>
+</div><div class="P PagerWrap"></div></div>		<div class="Foot Closed">
+			<div class="Note Closed SignInOrRegister"><a href="https://forum.processing.org/two/entry/signin?Target=%2Ftwo%2Fdiscussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository" class="Popup">Sign In</a> or <a href="https://forum.processing.org/two/entry/register?Target=%2Ftwo%2Fdiscussion%2F12520%2Fhow-to-find-a-particular-function-source-code-in-processing-s-github-repository">Register</a> to comment.         </div>
+					</div>
+		</div>
+         </div>
+      </div>
+      <div id="Foot">
+         <div class="Row">
+            <div id="copyright">Processing was initiated by <a href="http://benfry.com/">Ben Fry</a> and 
+               <a href="http://reas.com/">Casey Reas</a>. It is developed by a 
+               <a href="http://processing.org/about/people/">small team of volunteers</a>.
+            </div> 
+            <div id="colophon">
+               <a href="http://processing.org/copyright.html">© Info</a> \ 
+               <a href="http://vanillaforums.org/">Powered by Vanilla</a>.
+            </div>
+            <!-- Various definitions for Javascript //-->
+<script>
+var definitions = {
+'ImageResized' : "This image has been resized to fit in the page. Click to enlarge.",
+'DiscussionID' : "12520",
+'Emoticons' : "eyI6KV0iOjEwMCwiOykpIjo3MSwiOik+LSI6NjcsIjopKSI6MjEsIjopIjoxLCI6KHwpIjo1MSwiOigoIjoyMCwiOigiOjIsIjspIjozLCI6RCI6NCwiOzspIjo1LCI+OkQ8Ijo2LCI6LVwvIjo3LCI6eCI6OCwiOlxcXCI+Ijo5LCI6UCI6MTAsIjw6LVAiOjM2LCI6LSoiOjExLCI9KCgiOjEyLCI6LU8iOjEzLCI6TykiOjM0LCJYKCI6MTQsIjo+IjoxNSwiQi0pIjoxNiwiOi1TIjoxNywiIzotUyI6MTgsIj46KSI6MTksIjp8IjoyMiwiXC86KSI6MjMsIj0pKSI6MjQsIk86LSkiOjI1LCI6LUIiOjI2LCI9OyI6MjcsIkktKSI6MjgsIjgtfCI6MjksIkwtKSI6MzAsIjotJiI6MzEsIjotJCI6MzIsIlstKCI6MzMsIjgtfSI6MzUsIig6fCI6MzcsIj1QfiI6MzgsIjotPz8iOjEwNiwiOi0\/IjozOSwiIy1vIjo0MCwiPUQ+Ijo0MSwiOi1TUyI6NDIsIkAtKSI6NDMsIjpebyI6NDQsIjotdyI6NDUsIjotPCI6NDYsIj46UCI6NDcsIjpAKSI6NDksIjM6LU8iOjUwLCJ+Oj4iOjUyLCJ+TykiOjU3LCIqLTopIjo1OCwiOC1YIjo1OSwiPi0pIjo2MSwiOi1MIjo2MiwiWy1PPCI6NjMsIiQtKSI6NjQsIjotXFxcIiI6NjUsImItKCI6NjYsIlstWCI6NjgsIlxcOkRcLyI6NjksIj46XC8iOjcwLCI6LUAiOjc2LCJeOileIjo3NywiOi1qIjo3OCwiOi1jIjoxMDEsIn5YKCI6MTAyLCI6LWgiOjEwMywiOi10IjoxMDQsIjgtPiI6MTA1LCIlLSgiOjEwNywiOm8zIjoxMDgsIlhfWCI6MTA5LCI6ISEiOjExMCwiXFxtXC8iOjExMSwiOi1xIjoxMTIsIjotYmQiOjExMywiXiMoXiI6MTE0LCI6YnoiOjExNSwiOmFyISI6InBpcmF0ZSJ9",
+'AnalyticsTask' : "tick",
+'ButtonBarLinkUrl' : "Enter your URL:",
+'ButtonBarImageUrl' : "Enter image URL:",
+'ButtonBarBBCodeHelpText' : "You can use <b><a href=\"http:\/\/en.wikipedia.org\/wiki\/BBCode\" target=\"_new\">BBCode<\/a><\/b> in your post.",
+'ButtonBarHtmlHelpText' : "You can use <b><a href=\"http:\/\/htmlguide.drgrog.com\/cheatsheet.php\" target=\"_new\">Simple Html<\/a><\/b> in your post.",
+'ButtonBarMarkdownHelpText' : "You can use <b><a href=\"http:\/\/en.wikipedia.org\/wiki\/Markdown\" target=\"_new\">Markdown<\/a><\/b> in your post.",
+'InputFormat' : "Markdown",
+'ImageUpload_Url' : "\/two\/post\/imageupload",
+'ImageUpload_Multi' : true,
+'ImageUpload_InputFormatter' : "Markdown",
+'ImageUpload_MaxFileSize' : "2mb",
+'LastCommentID' : 51062,
+'TransportError' : "A fatal error occurred while processing the request.<br \/>The server returned the following response: %s",
+'TransientKey' : null,
+'WebRoot' : "https:\/\/forum.processing.org\/two",
+'UrlFormat' : "\/two\/{Path}",
+'Path' : "discussion\/12520\/how-to-find-a-particular-function-source-code-in-processing-s-github-repository",
+'Args' : "",
+'ResolvedPath' : "vanilla\/discussion\/index",
+'ResolvedArgs' : "{\"DiscussionID\":\"12520\",\"DiscussionStub\":\"how-to-find-a-particular-function-source-code-in-processing-s-github-repository\",\"Page\":\"\"}",
+'SignedIn' : 0,
+'ConfirmHeading' : "Confirm",
+'ConfirmText' : "Are you sure you want to do that?",
+'Okay' : "Okay",
+'Cancel' : "Cancel",
+'Search' : "Search"}
+</script>
+         </div>
+      </div>
+   </div>
+   
+   <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-44571661-2', 'processing.org');
+     ga('send', 'pageview');
+   </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7764a8b478","applicationID":"9745460","transactionName":"NQQGMBNYCBUAABZZXgxOMRYIFhIRDkwLXlUHGUoUCUk=","queueTime":0,"applicationTime":138,"atts":"GUMFRltCGxs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<div id="p1c60ajnugv8u1p9v1dae1d19u1q0_html5_container" style="position: absolute; background: transparent none repeat scroll 0% 0%; width: 100px; height: 100px; overflow: hidden; z-index: 99999; opacity: 0;" class="plupload html5"><input id="p1c60ajnugv8u1p9v1dae1d19u1q0_html5" style="font-size: 999px; position: absolute; width: 100%; height: 100%;" accept="image/jpeg,image/gif,image/png" multiple="multiple" type="file"></div></body></html>
