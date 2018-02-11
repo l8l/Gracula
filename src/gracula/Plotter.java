@@ -4,7 +4,7 @@ import processing.core.PApplet;
 import processing.core.PVector;
 import processing.event.MouseEvent;
 
-public class plotter extends PApplet {
+public class Plotter extends PApplet {
 
 	private float i = 0;
 	

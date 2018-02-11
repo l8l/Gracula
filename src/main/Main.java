@@ -6,6 +6,6 @@ abstract public class Main {
 
 	public static void main(String[] args) {
 		//PApplet.main("gracula.GraculaProcessing");
-		PApplet.main("gracula.plotter");
+		PApplet.main("gracula.Plotter");
 	}
 }
