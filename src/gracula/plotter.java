@@ -5,7 +5,7 @@ import processing.core.PVector;
 import processing.event.MouseEvent;
 
 public class plotter extends PApplet {
-
+	private GraculaBox graBox;
 	private float i = 0;
 	
 	public void settings() {
@@ -15,6 +15,7 @@ public class plotter extends PApplet {
 	public void setup() {
 		frameRate(70);
 		noStroke();
+		graBox = new GraculaBox(this);
 	}
 			
 	public void draw() {
@@ -27,7 +28,7 @@ public class plotter extends PApplet {
 		rotateY(i);
 		rotateX(-0.4f);
 		
-		box(100); //here we should insert a general shape
+		graBox.draw(); //here we should insert a general shape
 		
 		popMatrix();
 	}
