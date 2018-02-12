@@ -1,11 +1,10 @@
 package gracula;
 
 import processing.core.PApplet;
-import processing.core.PVector;
-import processing.event.MouseEvent;
 
-public class plotter extends PApplet {
+public class Plotter extends PApplet {
 	private GraculaBox graBox;
+
 	private float i = 0;
 	
 	public void settings() {
