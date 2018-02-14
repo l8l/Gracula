@@ -10,7 +10,7 @@ public class Plotter extends PApplet {
 	private float cameraZ = (height/2.0f) / tan(PI*60.0f/360.0f);
 	
 	public void settings() {
-		size(800, 500, P3D);
+		fullScreen(P3D);
 	}
 	
 	public void setup() {
