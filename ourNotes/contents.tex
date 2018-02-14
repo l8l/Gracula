@@ -1,0 +1,21 @@
+\renewcommand{\contentsname}{\LARGE Contents ~}
+\parskip 4pt
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}} %this filters out the display of any subsections that are lower or equal to "subsection" in the contents table, alternatively, or more individually this could also be achieved by simply writing "\subsection{SectionName}", where the star (*) denotes that this subsections should not be displayed in the contents table
+%\deftocheading{toc}{} for redefining contents table name in a Koma class
+\parskip 8pt
+\newpage
+\/*
+%------Setting the chapter descriptions on the page headers and footers---------
+%\fancyhead[LE,LO]{\rightmark}
+\fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{}{\emph{\leftmark}}}
+\fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{\emph{\rightmark}}{}}
+%\fancyfoot[CE,CO]{\thepage}
+\fancyfoot[C]{-~\thepage~-}
+%\fancyfoot[LE,RO]{}
+%-------------------------------------------------------------------------------------------
+*/
+  \setcounter{page}{1}
+  \renewcommand{\thepage}{\arabic{page}}
+% Arabic (common) numerals for page counter of the rest of the document
+

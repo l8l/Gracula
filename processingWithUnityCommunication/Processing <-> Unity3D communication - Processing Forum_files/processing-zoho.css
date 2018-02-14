@@ -1,0 +1,219 @@
+/* hacking some style into the ZOHO forum .. */
+/* fjenett - 2010-10 */
+
+body
+{
+    background-image: url('http://processing.org/img/processing_forum_back.jpg');
+    background-position: top center;
+    background-repeat: repeat-x;
+    
+    background-color: #555555;
+}
+
+/* header block */
+.headerMainCont
+{
+    background-color: transparent;
+    height: 120px;
+    border: 0px solid white;
+}
+
+/* will have to see what this brings up: */
+/* https://forums.zoho.com/topic/inline-css-in-default-layout */
+div.headerMainCont[style]
+{
+    border: 0px solid white !important;
+}
+
+/* header top content: logo, title, .. */
+.headerMainCont .wrapper
+{
+    height: 80px;
+}
+
+.headerMainCont .logoCont
+{
+    border: 0px solid white;
+}
+
+.headerMainCont .logoCont img,
+#errorPageHeader .flLeft img
+{
+    display: none;
+}
+
+.headerMainCont .logoCont a,
+#errorPageHeader .flLeft
+{
+    display: block;
+    background-image:url('http://processing.org/img/processing_forum_logo.png');
+    background-repeat: no-repeat;
+    background-position: 10px 14px;
+    width: 360px;
+    height: 70px;
+    cursor: pointer;
+}
+
+ul.mainNavLinks li.selected div
+{
+    background-image:url('http://processing.org/img/processing_forum_tab-sel.png');
+    background-position: 0px 0px;
+}
+
+#portalComboCont
+{
+    display: none;
+}
+
+.headerMainCont .userDetails
+{
+    padding-top: 15px;
+}
+
+.headerMainCont .userDetails,
+.headerMainCont .userDetails a,
+#errorPageHeader .subMenu,
+#errorPageHeader .subMenu a
+{
+    color: white;
+}
+
+/* header tab container */
+.headerMainCont .cssSpanCurve
+{
+}
+
+/* header menu block content */
+.mainNavigationCont
+{
+    background-image: none;
+    background-color: transparent;
+}
+
+.mainNavigationCont .wrapper
+{
+    padding-top: 4px;
+    height: 30px;
+    background-color: #FFFFFF;
+}
+
+.mainNavigationCont .wrapper,
+.mainNavigationCont ul.mainNavLinks li a
+{
+    color: #333333;
+}
+
+/* header tabbed menu right block: search, etc. */
+.mainNavigationCont .wrapper #tabListCont
+{
+    margin-right: 4px;
+}
+
+#searchInputBox
+{
+    padding-bottom: 5px;
+}
+
+/* main content */
+.topWhiteBorder
+{
+    border: 0px solid white;
+}
+
+/* FOOTER */
+
+.footerMain,
+#errorPageFooter
+{
+    background-color: transparent;
+}
+.footerMain,
+.footerMain a,
+#errorPageFooter,  /* login pages */
+#errorPageFooter a
+{
+    color: #aaaaaa;
+}
+
+.footerMain .wrapper,
+.errorpagemain /* sorry pages */
+{
+    margin:0 auto;
+    max-width:1040px;
+    min-width:800px;
+    text-align:left;
+    width:95%;
+    border: 0px solid white;
+}
+
+/* Login / logout page */
+.discussionFormmain
+{
+    background-color: white;
+}
+
+/* Sorry pages */
+.errorpagemain .headerArea
+{
+    padding-left: 20px;
+}
+
+.errorpagemain .errorpagecontentWrapper
+{
+    overflow: auto;
+}
+
+.errorpagemain .errorpagecontent ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.errorpagemain .errorpagecontent li
+{
+    float: left;
+}
+
+#isNotifyEveryone
+{
+ display:none;
+}
+
+/* changes 2012-04, fjenett */
+
+.mainContainer
+{
+	padding-top: 3px;
+}
+
+.mainContainer div.sideBar
+{
+	margin-left: 5px;
+	width: 255px;
+	background-color: white;
+}
+
+.mainContainer .contentContainer
+{
+	margin-top: 2px;
+}
+
+.mainContainer .contentWrapper
+{
+	box-shadow: none;
+	border-radius: 0px;
+	border: 0px solid transparent;
+}
+
+/* end changes 2012-04, fjenett */
+
+/* additions for static version, fjenett 2013-09 */
+
+.element-hidden {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    left: -1000px;
+    top: -1000px;
+}

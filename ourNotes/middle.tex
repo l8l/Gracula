@@ -1,0 +1,80 @@
+\section{Generalisations of the circle}
+
+Here is a short summary of some ideas outlined in \cite{Hanson1994}.
+
+The equation of the circle is given by
+\begin{equation}
+  x^2+y^2 = 1 \te{ with solutions }
+  \begin{pmatrix}
+    x\\
+    y
+  \end{pmatrix} =
+  \begin{pmatrix}
+    \cos \theta\\
+    \sin \theta
+  \end{pmatrix},~\theta \in [0,2\pi).
+  \label{eq:circle}
+\end{equation}
+A generalisation is given by
+\begin{equation}
+  x^n+y^n = 1 \te{ with solutions }
+  \begin{pmatrix}
+    x\\
+    y
+  \end{pmatrix} =
+  \begin{pmatrix}
+    (\cos \theta)^{2/n}\\
+  (\sin \theta)^{2/n}
+\end{pmatrix}.
+  \label{eq:generalRealCircle}
+\end{equation}
+This equation is already interesting for 2D graphic visualisations because
+the solutions for different values of $n\ge 2$ correspond to interpolations between
+the circle and and a square with rounded edges while $n=1$ is a perfect square.
+
+One may define a more general equation on the complex plane,
+\begin{equation}
+  u^2+o^2 = 1,~u,o\in\mathbb{C},
+\end{equation}
+which is solved by
+\begin{equation}
+  \begin{split}
+    u = \frac{1}{2}\br{e^{\xi+i\theta}+e^{-(\xi+i\theta)}},\qquad
+  o = \frac{1}{2i}\br{e^{\xi+i\theta}-e^{-(\xi+i\theta)}}
+\end{split},~\xi,\theta\in\mathbb{R}
+  \label{eq:complexCircle}
+\end{equation}
+because
+\begin{equation*}
+  \begin{split}
+    u^2 = \frac{1}{4}
+    \br{e^{2(\xi+i\theta)}+e^{-2(\xi+i\theta)}+2} \te{ and }
+    o^2 = -\frac{1}{4}
+    \br{e^{2(\xi+i\theta)}+e^{-2(\xi+i\theta)}-2}
+  \end{split}.
+\end{equation*}
+Observe that we now actually solve two equations
+(because $\mathbb{C}\simeq \mathbb{R}^2$ and if we use basis $(1,i)$, then one complex equation
+amounts to two real equations) for two complex variables (4 real components)
+and thus must have 2 free real parameters in the end which amount to $\xi,\theta\in \mathbb{R}$.
+Thus, the solution describes a 2-dimensional surface.\\
+
+The real part of the solution is
+\begin{equation}
+  \begin{split}
+    \Re{u} = \frac{e^{\xi}+e^{-\xi}}{2}\cos\theta,\qquad
+    \Re o = \frac{e^{\xi}+e^{-\xi}}{2}\sin\theta
+\end{split}
+\end{equation}
+which restricts back to a solution of eq. (\ref{eq:circle}) for $\xi=0$.\\
+However, by defining $s(k,n):=\exp\br{2\pi i k/n}$, we can solve the more general equation
+\begin{equation}
+  \begin{split}
+    z_1^{n_1}+z_2^{n_2}=1\qquad \te{ with } \qquad z_1 = s(k_1,n_1)u^{2/n_1},~z_2 = s(k_2,n_1)o^{2/n_2},
+\end{split}
+  \label{eq:complexGeneralCircle}
+\end{equation}
+%the real part of which also restricts back to solutions of eq. (\ref{eq:generalRealCircle}) for $\xi=0$
+%and $n_1=n_2$.
+which gives rise to the visualisation of a multitude of interesting 2D - surfaces embedded in 3-space.
+

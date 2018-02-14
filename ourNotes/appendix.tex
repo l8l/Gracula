@@ -1,0 +1,75 @@
+\appendix
+\section{Appendix}
+
+    \subsection{Proof that the regulated effective action
+    undergoes a transitions between the bare and the full quantum effective action}
+    The proof follows \cite{mariomitter}.\\
+\textbf{For} \( \mathbf{k=0} \):
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=0}) &= \int \mathcal{D}\xi ~\exp\br{ -S[\xi] - \un{\Delta S_k[\xi]}{=0} +\un{\Delta S_k[\phi]}{=0}   + J\cdot \xi - J\cdot \phi}
+= \exp\br{ - J\cdot \phi} \int \mathcal{D}\xi ~\exp\br{ -S[\xi] + J\cdot \xi}
+\end{split}
+\end{equation*}
+\begin{equation*}
+\Lr \Gamma_{k=0} = J\cdot \phi - W[J] = \Gamma
+\end{equation*}
+\textbf{For }\( \mathbf{k=\Lambda }\):
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=\Lambda}) %&= \int \mathcal{D}\xi ~\exp\br{ -S[\xi] - \Delta S_k[\xi] + \Delta S_k[\phi]   + J\cdot \xi - J\cdot \phi} \\
+&=  \int \mathcal{D}\xi ~\exp\br{ -S[\xi] - \frac{1}{2}\xi(-p) \cdot R_k  \cdot \xi(p) + \frac{1}{2}\phi(-p) \cdot R_k  \cdot \phi(p)   + J\cdot \xi - J\cdot \phi}
+\end{split}
+\end{equation*}
+Then one renames \( \xi \ra \xi + \phi \):
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=\Lambda}) %&=  \int \mathcal{D}\xi ~\exp\left( -S[\xi+\phi] -\frac{1}{2} (\xi(-p)+\phi(-p)) \cdot R_k  \cdot (\xi(p)+\phi(p)) \right. \\
+%& ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%+ \left.\frac{1}{2} \phi(-p) \cdot R_k  \cdot \phi(p)   + J\cdot (\xi + \phi) - J\cdot \phi \right) \\
+&= \int \mathcal{D}\xi ~\exp\left( -S[\xi+\phi] - \frac{1}{2} \xi(-p)\cdot R_k\cdot \xi(p)-\frac{1}{2} \xi(-p) \cdot R_k  \cdot \phi(p) -\frac{1}{2} \phi(-p) \cdot R_k  \cdot \xi(p)    + J\cdot \xi \right)
+\end{split}
+\end{equation*}
+\( R_k \) is symmetric (a real symmetric matrix with infinitely many entries which represents a self-adjoint (\( R^*_k = R_k \)) operator ), therefore \( \xi(-p) \cdot R_k  \cdot \phi(p) =  \phi(-p) \cdot R_k  \cdot \xi(p) \) and the equation simplifies further to
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=\Lambda}) &= \int \mathcal{D}\xi ~\exp\left( -S[\xi+\phi] - \frac{1}{2} \xi(-p)\cdot R_k\cdot \xi(p) -  \phi(-p)\cdot R_k\cdot \xi(p) + J\cdot \xi \right)
+\end{split}
+\end{equation*}
+To proceed, one makes use of the relations
+\begin{equation*}
+\begin{split}
+\Gamma_k = \tilde \Gamma_k - \Delta&S_k[\phi]= +  J\cdot \phi - W[J] - \Delta S_k[\phi]
+\te{ and }  \frac{\delta \tilde \Gamma_k}{\delta \phi} = J \\
+\Ra  \frac{\delta \Gamma_k}{\delta \phi}
+%= J - \frac{1}{2}  \frac{\delta \Delta S_k[\phi]}{\delta \phi} & = J - \frac{1}{2} \phi(-p) \cdot R_k -\frac{1}{2} R_k \cdot \phi(p)
+&= J -   \phi(-p) \cdot R_k %\\
+\Lr J = \Gamma_k^{(1)} +   \phi(-p) \cdot R_k
+\end{split}
+\end{equation*}
+which results in
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=\Lambda}) &= \int \mathcal{D}\xi ~\exp\left( -S[\xi+\phi] - \frac{1}{2} \xi(-p)\cdot R_k\cdot \xi(p)  + \Gamma_k^{(1)} \cdot \xi \right).
+\end{split}
+\end{equation*}
+Now one \emph{assumes} that a functional delta distribution exists in analogy to
+\begin{equation*}
+\begin{split}
+\lim_{ \sigma \ra 0} \frac{\exp\br{- \frac{x^2}{2\sigma}} }{\sqrt{2\pi \sigma}} = \delta(x) \te{ such that } \lim_{ R_k \ra \infty} \frac{ \sqrt{R_k} \exp\br{-\frac{1}{2} \xi(-p) R_k \xi(p) } }{\sqrt{2 \pi}} = \delta(\xi).
+\end{split}
+\end{equation*}
+Insertion into the last equation finally yields
+\begin{equation*}
+\begin{split}
+\exp(-\Gamma_{k=\Lambda}) &= \sqrt{ \frac{2\pi}{R_k}} \int \mathcal{D}\xi ~\exp\left( -S[\xi+\phi] + \Gamma_k^{(1)} \cdot \xi \right) \delta(\xi) \\
+&= \sqrt{ \frac{2\pi}{R_k}} \exp\left( -S[\phi] \right) \exp( \Gamma_k^{(1)} \cdot 0 )= \sqrt{ \frac{2\pi}{R_k}} \exp\left( -S[\phi] \right), \\
+\Ra & \Gamma_{k=\Lambda} = S[\phi] \un{- \ln\br{ \sqrt{ \frac{2\pi}{R_k} }}}{\ra -\ln(0) \ra \infty }.
+\end{split}
+\end{equation*}
+Up to a constant that is infinite, \( S_\Lambda \) and \( \Gamma_\Lambda \) correspond to each other. This infinite constant will however not appear in the differential equation that is used as a later basis nor in any physical correlation function, therefore it is convention to absorb the constant into the definition of \( S \) and to state that the two objects are equal.
+
+Additional information can be found in \cite{btw} on page 17.
+
+
+
