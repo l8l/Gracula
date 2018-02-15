@@ -37,7 +37,8 @@ public class Plotter extends PApplet {
 		rotateX(-0.4f);
 		
 		graBox.draw(); //here we should insert a general shape
-		translate(100,0,0);
+		translate(200,0,0);
+		graBox.draw(); //here we should insert a general shape
 		
 		popMatrix();
 	}
