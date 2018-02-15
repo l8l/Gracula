@@ -5,6 +5,7 @@ import queasycam.QueasyCam;
 
 public class Plotter extends PApplet {
 	private GraculaBox graBox;
+	private GraculaSphere graSphere;
 	private QueasyCam cam;
 	private float i = 0;
 	private float cameraZ = (height/2.0f) / tan(PI*60.0f/360.0f);
@@ -24,6 +25,7 @@ public class Plotter extends PApplet {
 	//For perspective explanation, see https://processing.org/reference/perspective_.html
 	
 	graBox = new GraculaBox(this);
+	graSphere = new GraculaSphere(this);
 	}
 			
 	public void draw() {
@@ -37,6 +39,8 @@ public class Plotter extends PApplet {
 		rotateX(-0.4f);
 		
 		graBox.draw(); //here we should insert a general shape
+		translate(0,250,0);
+		graSphere.draw();
 		
 		popMatrix();
 	}
