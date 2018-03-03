@@ -2,7 +2,7 @@ package gracula;
 
 import processing.core.PApplet;
 
-public class GraculaBase {
+public abstract class GraculaBase {
 	protected PApplet applet;
 	
 	public GraculaBase(PApplet applet) {
@@ -12,4 +12,6 @@ public class GraculaBase {
 	public void lightz() {
 		applet.noStroke();
 	}
+	
+	public abstract void draw();
 }
