@@ -3,7 +3,7 @@ package gracula;
 import processing.core.PApplet;
 
 public abstract class GraculaBase {
-	protected PApplet applet;
+	protected final PApplet applet;
 	
 	public GraculaBase(PApplet applet) {
 		this.applet = applet;
