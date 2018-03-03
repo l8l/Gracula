@@ -15,17 +15,17 @@ public class Plotter extends PApplet {
 	}
 	
 	public void setup() {
-	frameRate(70);
-	noStroke();
-
-	cam = new QueasyCam(this);
-	cam.sensitivity = (float) 0.5;
-	cam.speed = 2.0f;
-	perspective(PI/3, (float)width/height, cameraZ/10.0f, cameraZ*100.0f);
-	//For perspective explanation, see https://processing.org/reference/perspective_.html
+		frameRate(70);
+		noStroke();
 	
-	graBox = new GraculaBox(this);
-	graSphere = new GraculaSphere(this);
+		cam = new QueasyCam(this);
+		cam.sensitivity = 0.5f;
+		cam.speed = 2.0f;
+		perspective(PI/3, (float)width/height, cameraZ/10.0f, cameraZ*100.0f);
+		//For perspective explanation, see https://processing.org/reference/perspective_.html
+		
+		graBox = new GraculaBox(this);
+		graSphere = new GraculaSphere(this);
 	}
 			
 	public void draw() {
